@@ -6,7 +6,6 @@
 
 function Set-SteamStatus {
     Param(
-        # Parameter help description
         [Parameter(Mandatory=$true)]
         [ValidateSet("Online","Away","Busy","Invisible", "Offline")]
         [String[]]$Status
@@ -14,7 +13,6 @@ function Set-SteamStatus {
 
     Start-Process "steam://friends/status/$status"
 }
-
 
 function Update-SteamStatus {
     $day = (Get-Date).DayOfWeek
