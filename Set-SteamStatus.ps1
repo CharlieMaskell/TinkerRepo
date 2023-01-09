@@ -36,3 +36,5 @@ function Set-WeekdayStatus {
         Set-SteamStatus Online
     }
 }
+
+Update-SteamStatus
